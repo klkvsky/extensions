@@ -1,12 +1,17 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "jira-beta",
-  "title": "Jira Beta",
+  "name": "jira",
+  "title": "Jira",
   "description": "Create, access, and modify issues and sprints.",
   "icon": "icon.png",
   "author": "thomaslombart",
   "contributors": [
-    "FezVrasta"
+    "FezVrasta",
+    "igor9silva",
+    "jesperorb",
+    "teziovsky",
+    "rifont",
+    "gavinroderick"
   ],
   "owner": "raycast",
   "access": "public",
@@ -20,18 +25,7 @@
       "title": "Create Issue",
       "subtitle": "Jira",
       "description": "Create and assign new issues.",
-      "mode": "view",
-      "preferences": [
-        {
-          "name": "signature",
-          "type": "checkbox",
-          "title": "Signature",
-          "label": "Add Raycast signature to new issues",
-          "description": "When enabled, \"Created via Raycast\" signature will be added at the bottom of the description.",
-          "required": false,
-          "default": true
-        }
-      ]
+      "mode": "view"
     },
     {
       "name": "open-issues",
@@ -66,7 +60,18 @@
       "title": "My Filters",
       "subtitle": "Jira",
       "description": "View and modify issues of your saved filters.",
-      "mode": "view"
+      "mode": "view",
+      "preferences": [
+        {
+          "name": "sortByFavourite",
+          "description": "If checked, any filters marked as favourite in Jira will be displayed first in the filter selection dropdown.",
+          "type": "checkbox",
+          "required": false,
+          "title": "Favourite Filters",
+          "default": false,
+          "label": "Show favourite filters ahead of others"
+        }
+      ]
     },
     {
       "name": "recently-updated-issues",
@@ -84,8 +89,8 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.48.8",
-    "@raycast/utils": "^1.4.16",
+    "@raycast/api": "^1.53.3",
+    "@raycast/utils": "^1.5.2",
     "date-fns": "^2.29.3",
     "filesize": "^10.0.6",
     "form-data": "^4.0.0",

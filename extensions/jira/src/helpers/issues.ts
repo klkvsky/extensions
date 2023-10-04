@@ -31,20 +31,23 @@ export function getIssueListSections(issues?: Issue[]) {
   const statusCategoryNames: Record<string, string> = {};
   for (const issue of issues) {
     const statusCategory = issue.fields.status.statusCategory;
-    statusCategoryNames[statusCategory.key] = statusCategory.name;
+    if (statusCategory) {
+      statusCategoryNames[statusCategory.key] = statusCategory.name;
+    }
   }
 
   const issuesByStatusCategoryKey = groupBy(issues, (issue) => {
-    const key = issue.fields.status.statusCategory.key;
+    const statusCategory = issue.fields.status.statusCategory;
 
-    if (statusCategoryKeyOrder.includes(key)) {
-      return issue.fields.status.statusCategory.key;
+    if (statusCategory && statusCategoryKeyOrder.includes(statusCategory.key)) {
+      return issue.fields.status.statusCategory?.key;
     }
 
     // If the status category doesn't seem to be
     // a known key, assign it to unknown by default
     return StatusCategoryKey.unknown;
   });
+
   return statusCategoryKeyOrder
     .filter((categoryKey) => {
       const issues = issuesByStatusCategoryKey[categoryKey];
@@ -63,18 +66,13 @@ export function getIssueListSections(issues?: Issue[]) {
 
 export function getIssueDescription(description: string) {
   const nodeToMarkdown = new NodeHtmlMarkdown(
-    {},
+    { keepDataImages: true },
     // For some reasons, Jira doesn't wrap code blocks within a <code> block
     // but only within a <pre> block which is not recognized by NodeHtmlMarkdown.
     {
       pre: {
         prefix: "```\n",
         postfix: "\n```",
-      },
-      // Raycast doesn't support tables in Markdown, so let's remove
-      // it from the end result.
-      table: {
-        content: "",
       },
     }
   );

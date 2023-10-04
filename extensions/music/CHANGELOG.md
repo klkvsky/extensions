@@ -1,5 +1,30 @@
 # Apple Music Changelog
 
+## [Fix `start-playlist`] - 2023-08-31
+
+- Fixed a bug in `start-playlist` where item title could be empty or undefined.
+
+## [Dislike & Skip] - 2023-08-10
+
+- Add command to dislike and then skip a track
+
+## [Fix] - 2023-08-05
+
+- Fixed HUD confirmations from showing an unknown character
+- Swapped deprecated 'accessoryTitle' to 'accessories' in lists
+
+## [Fix] - 2023-06-12
+
+- Fixed a few bugs that caused some commands not to open correct
+
+## [Update] - 2023-05-03
+
+- This adds the currently playing track in Play Library Track
+
+## [Update] - 2023-04-10
+
+- Improved search to match Apple Music behaviour
+
 ## [Fix] - 2023-03-23
 
 - Added fallback scripts to commands that were interacting with the library.
