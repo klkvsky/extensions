@@ -449,6 +449,7 @@
 /extensions/hostloc                                  @J3n5en
 /extensions/houdahspot-search                        @blackspike
 /extensions/how-long-to-beat                         @Cronos87 @whitespacecode
+/extensions/http-mime                                @Envl @pernielsentikaer
 /extensions/http-status-codes                        @AlexVanderbist
 /extensions/hubspot                                  @harisvsulaiman @pernielsentikaer @6farer @scoop
 /extensions/hubspot-portal-launcher                  @chrisoklepke @pernielsentikaer
@@ -492,7 +493,7 @@
 /extensions/jellyfin                                 @darmiel
 /extensions/jenkins                                  @k8scat @vkhitrin
 /extensions/jetbrains                                @gdsmith @adrienbaron @dima-m711
-/extensions/jira                                     @thomaslombart @FezVrasta @igor9silva @jesperorb @teziovsky @gavinroderick @gavinroderick
+/extensions/jira                                     @thomaslombart @FezVrasta @igor9silva @jesperorb @teziovsky @gavinroderick @gavinroderick @michael-par
 /extensions/jira-search                              @svenwiegand
 /extensions/jira-search-self-hosted                  @emanguy @svenwiegand @koseduhemak @rnprest @LunaticMuch @nick318
 /extensions/jira-time-tracking                       @niallpaterson
@@ -732,6 +733,7 @@
 /extensions/pagerduty                                @horimislime
 /extensions/palette-colors                           @douglas-pires
 /extensions/palette-picker                           @juliusmarminge
+/extensions/papago-translate                         @Rita-Mordio
 /extensions/paperless-ngx                            @Padamdam
 /extensions/papermatch                               @marlonjames71 @AndrewMonty
 /extensions/paperspace                               @yuri-becker
@@ -942,7 +944,7 @@
 /extensions/simpread                                 @Kenshin
 /extensions/single-disk-eject                        @johndturn
 /extensions/sip                                      @jamesjlyons
-/extensions/sips                                     @SKaplanOfficial @arronhunt
+/extensions/sips                                     @SKaplanOfficial @arronhunt @nakaakist
 /extensions/sketch                                   @aesign
 /extensions/slack                                    @momme-rtf @Elliot67
 /extensions/slack-status                             @PitNikola @johnhampton
@@ -1116,7 +1118,7 @@
 /extensions/vueuse-functions                         @noopurphalak
 /extensions/wakatime                                 @iammola
 /extensions/waktu-solat                              @sayuthisobri
-/extensions/warp                                     @joetannenbaum @danulqua @theRubberDuckiee
+/extensions/warp                                     @joetannenbaum @danulqua @theRubberDuckiee @hakob8956
 /extensions/wayback-machine                          @pernielsentikaer @andreaselia
 /extensions/weather                                  @tonka3000
 /extensions/web-audit                                @floriandwt
